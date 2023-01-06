@@ -10,7 +10,7 @@ include("generalizedquadrature.jl")
 include("orthonormal.jl")
 include("errorcorrection.jl")
 
-include("quadrature/getrules.jl")
+include("quadrature/gqlog.jl")
 
 export correctlog
 export nestedquadrature
