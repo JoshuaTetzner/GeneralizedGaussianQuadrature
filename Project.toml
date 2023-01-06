@@ -1,0 +1,10 @@
+name = "MaRokhlinWandzura"
+uuid = "958e0c08-f14d-42e8-a0ab-84193b3783f2"
+authors = ["Joshua <joshua.tetzner@uni-rostock.de\n>"]
+version = "0.1.0"
+
+[deps]
+FastGaussQuadrature = "442a2c76-b920-505d-bb47-c5924d526838"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+SpecialPolynomials = "a25cea48-d430-424a-8ee7-0d3ad3742e9e"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
