@@ -5,11 +5,11 @@ using FastGaussQuadrature
 using LinearAlgebra
 using SpecialPolynomials
 
+include("nestedchebyshevapprox.jl")
 include("errorcorrection.jl")
 include("generalizedquadrature.jl")
 include("orthonormal.jl")
 include("polynomes.jl")
-include("nestedchebyshevapprox.jl")
 
 include("quadrature/gqlog.jl")
 
