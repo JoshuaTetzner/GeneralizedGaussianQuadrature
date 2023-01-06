@@ -17,7 +17,6 @@ function intschebychev(n::I, a::F, b::F) where {I, F <: AbstractFloat}
     end
 end
 
-
 N = 3
 order = 2*N-1 
 sys = nestedsystem(order, 50, 50, logfct, T=BigFloat)
