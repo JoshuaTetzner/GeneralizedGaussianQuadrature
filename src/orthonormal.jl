@@ -1,7 +1,7 @@
 using LinearAlgebra
 using Base.Threads
 
-function dotproduct(veca::Vector{F}, vecb::Vector{F}) where F <: AbstractFloat
+function dotproduct(veca::AbstractArray{F}, vecb::AbstractArray{F}) where F <: AbstractFloat
     lena = length(veca)
     lenb = length(vecb)
     if lena != lenb
