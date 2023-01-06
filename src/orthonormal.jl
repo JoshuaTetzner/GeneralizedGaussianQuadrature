@@ -29,8 +29,21 @@ function dotproduct(veca::Vector{F}, vecb::Vector{F}) where F <: AbstractFloat
     end
 end
 
-
 function substract(veca::SubArray{F}, vecb::SubArray{F}) where F <: AbstractFloat
+    lena = length(veca)
+    lenb = length(vecb)
+    if lena != lenb
+        a = zeros(F, max(lena, lenb))
+        b = zeros(F, max(lena, lenb))
+        a[1:lena] = veca
+        b[1:lenb] = vecb
+        return a .- b
+    else 
+        return veca .- vecb
+    end
+end
+
+function substract(veca::Vector{F}, vecb::Vector{F}) where F <: AbstractFloat
     lena = length(veca)
     lenb = length(vecb)
     if lena != lenb
