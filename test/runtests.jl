@@ -1,4 +1,6 @@
 using Test
+using LinearAlgebra
+using MaRokhlinWandzura
 
 @testset "fmm" begin
     include("test_generalizedquadrature.jl")

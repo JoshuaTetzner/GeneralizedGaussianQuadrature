@@ -6,11 +6,12 @@ using LinearAlgebra
 using SpecialPolynomials
 
 include("nestedchebyshevapprox.jl")
+include("errorcorrection.jl")
 include("generalizedquadrature.jl")
 include("orthonormal.jl")
-include("errorcorrection.jl")
+include("polynomes.jl")
 
-include("quadrature/getrules.jl")
+include("quadrature/gqlog.jl")
 
 export correctlog
 export nestedquadrature

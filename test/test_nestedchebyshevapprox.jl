@@ -8,6 +8,15 @@ function logfct(n, x)
     end
 end
 
+function intschebychev(n::I, a::F, b::F) where {I, F <: AbstractFloat}
+
+    if n == 1
+        return 0
+    else
+        return (b - a) / 2 * ((-1)^n + 1) / (1 - n^2)
+    end
+end
+
 N = 3
 order = 2*N-1 
 sys = nestedsystem(order, 50, 50, logfct, T=BigFloat)
