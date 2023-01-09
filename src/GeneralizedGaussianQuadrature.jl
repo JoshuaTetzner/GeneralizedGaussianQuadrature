@@ -1,4 +1,4 @@
-module MaRokhlinWandzura
+module GeneralizedGaussianQuadrature
 
 using Base.Threads 
 using LinearAlgebra
@@ -19,4 +19,4 @@ export gramschmidt
 
 export generalizedquadrature
 
-end # module MaRokhlinWandzura
+end # module GeneralizedGaussianQuadrature.jl 
