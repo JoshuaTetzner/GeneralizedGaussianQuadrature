@@ -1,7 +1,6 @@
 module MaRokhlinWandzura
 
 using Base.Threads 
-using FastGaussQuadrature
 using LinearAlgebra
 using SpecialPolynomials
 
