@@ -344,10 +344,10 @@ const gq30logw = [
 const gqlogx = [gq3logx, gq4logx, gq5logx, gq6logx, gq7logx, gq8logx, gq9logx, gq10logx, gq15logx, gq20logx, gq25logx, gq30logx]
 const gqlogw = [gq3logw, gq4logw, gq5logw, gq6logw, gq7logw, gq8logw, gq9logw, gq10logw, gq15logw, gq20logw, gq25logw, gq30logw]
 
-mutable struct GQExeptionDegree <: Exception
+mutable struct GQExceptionDegree <: Exception
 end
 
-Base.showerror(io::IO, e::GQExeptionDegree) = print(
+Base.showerror(io::IO, e::GQExceptionDegree) = print(
     io,
     "Only quadratures of degree 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25 and 30 available."
 )
@@ -360,7 +360,7 @@ function generalizedquadrature(n::Int)
         if n in rules
             gqlogx[8+Int((n-10)/5)], gqlogw[8+Int((n-10)/5)] 
         else
-            throw(GQExptionDegree())
+            throw(GQExceptionDegree())
         end
     end
 end
